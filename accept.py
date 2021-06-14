@@ -7,11 +7,11 @@ driver.get("https://www.linkedin.com/login")
 driver.maximize_window()
 
 
-driver.find_element_by_id("username").send_keys("karanjitkaur78@gmail.com")
-driver.find_element_by_id("password").send_keys("sukhsirat")
+driver.find_element_by_id("username").send_keys("<username>") #Enter your username here
+driver.find_element_by_id("password").send_keys("<password>") #Enter your password here
 driver.find_element_by_class_name("from__button--floating").click()
 
-driver.find_element_by_xpath("/html/body/div[5]/aside/div[1]/header/section[2]/button[2]").click()
+driver.find_element_by_xpath("/html/body/div[5]/aside/div[1]/header/section[2]/button[2]").click() #To close the message box that pops everytime you login
 
 
 driver.get('https://www.linkedin.com/mynetwork/invitation-manager/')
